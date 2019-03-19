@@ -1,0 +1,87 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "console": true,
+    "document": true,
+    "process": true,
+    "window": true,
+    "Enzyme": true,
+    "_": true
+  },
+  "rules": {
+    "no-debugger": "off",
+    "no-useless-escape": "off",
+    "no-case-declarations": "warn",
+    "require-jsdoc": "off",
+    "no-console": "off",
+    "max-len": "off",
+    "new-cap": "off",
+    "react/jsx-no-undef": "error",
+    "no-else-return": "error",
+    "no-lonely-if": "error",
+    "quote-props": ["error", "as-needed"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
+    "react/self-closing-comp": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "comma-dangle": "off",
+    "space-after-keywords": "off",
+    "semi": ["error", "always"],
+    "object-curly-spacing": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "import/first": ["error"],
+    "import/newline-after-import": ["error"],
+    "import/order": ["error", {"groups": ["builtin", "external"]}],
+    "keyword-spacing": ["error", {
+      "before": true,
+      "after": true
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxBOF": 1,
+      "maxEOF": 1
+    }],
+    "indent": [
+      "error",
+      2,
+      {
+        "ArrayExpression": 1,
+        "SwitchCase": 1,
+        "MemberExpression": 1,
+        "ObjectExpression": 1,
+        "VariableDeclarator": 1,
+        "FunctionDeclaration": {"body": 1, "parameters": 1}
+      }
+    ],
+    "prefer-template": "error",
+    "react/no-array-index-key": "error",
+    "prefer-destructuring": ["error", {
+      "array": true,
+      "object": true
+    }, {
+      "enforceForRenamedProperties": false
+    }]
+  }
+}

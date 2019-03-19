@@ -1,0 +1,19 @@
+{
+  "defaultSeverity": "warning",
+  "rules":{
+      "color-hex-case": "lower",
+      "font-family-no-duplicate-names": true,
+      "string-no-newline": true,
+      "unit-no-unknown": true,
+      "block-no-empty": true,
+      "no-duplicate-at-import-rules": true,
+      "no-duplicate-selectors": true,
+      "no-extra-semicolons": true,
+      "color-named": "never",
+      "declaration-block-no-redundant-longhand-properties": true,
+      "declaration-no-important": true,
+      "string-quotes": "single",
+      "property-case": "lower",
+      "declaration-block-semicolon-newline-after": "always"
+  }
+}
